@@ -13,7 +13,11 @@ let friends = {
 router.get("/",(req,res)=>{
 
   // Update the code here
+router.get("/",(req,res)=>{
+    // Send JSON response with formatted friends data
+    res.send(JSON.stringify(friends,null,4));
 
+});
   res.send("Yet to be implemented")//This line is to be replaced with actual return value
 });
 
